@@ -1,0 +1,263 @@
+@import url(/MotionUI/motion-ui-starter/motion-ui-starter/css/motion-ui.css);
+
+
+*{
+    margin: 0PX;
+}
+
+/*HEADER*/
+
+.cajapadre1 {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.logoimg{
+    display: flex;
+    margin: 0px 20px 0px 30px;
+}
+
+.uno {
+    padding: 0%;
+    margin: 30px 30px 0px 30px;
+}
+
+.dos {
+    padding: 0%;
+    margin: 30px 30px 0px 30px;
+}
+
+.tres {
+    padding: 0%;
+    margin: 30px 30px 0px 30px;
+}
+
+.cuatro {
+    padding: 0%;
+    margin: 30px 30px 0px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*BIOGRAFÍA*/
+
+.cajapadrebiografia {
+    background-image: url(../imágenes/daftpunk.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: left 100px center;
+    color: white;
+    height: 1000px;
+}
+
+.textobiografia{
+    margin-left: 65%;
+    padding-top: 25%;  
+}
+
+
+/*DISCOGRAFÍA*/
+
+.cajapadrediscografia{
+    background-color: white;
+    height: 550px;
+    text-align: center;
+}
+
+.cajapadrediscos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: flex;
+}
+
+.cajapadrediscos img{
+    width: 50%;
+}
+
+.cajapadrediscografia h2{
+    color: black;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+}
+
+.albumhomework, .albumdaftclub{
+    text-align: right;
+}
+
+.albumrandomaccessmemories, .albumalive{
+    text-align: left;
+}
+
+
+
+.albumalive.spin-in {
+  animation: spin-in 5s ease-in-out;
+}
+
+@keyframes spin-in {
+    0% {
+      opacity: 0;
+      transform: rotate(-180deg) scale(0.5);
+    }
+    100% {
+      opacity: 100;
+      transform: rotate(0deg) scale(1);
+    }
+}
+
+.albumhomework.slide-in-up
+{
+    animation-name: slide-in-up;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+.albumdaftclub.scale-in-up
+{
+    animation-name: scale-in-up;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scale-in-up 
+{
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+.albumrandomaccessmemories.hinge-in-from-top
+{
+    animation-name: hinge-in-from-top;
+    animation-duration: 5s;
+    animation-delay: 15s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hinge-in-from-top 
+{
+    0% {
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotate(0deg);
+    }
+    20% {
+      transform-origin: top center;
+      transform: rotate(80deg);
+    }
+    40% {
+      transform-origin: top center;
+      transform: rotate(60deg);
+    }
+    60% {
+      transform-origin: top center;
+      transform: rotate(80deg);
+    }
+    80% {
+      transform-origin: top center;
+      transform: rotate(60deg);
+    }
+    100% {
+      opacity: 1;
+      transform-origin: top center;
+      transform: rotate(0deg);
+    }
+}
+
+
+/*VIDEOS*/
+
+.cajapadrevideos{
+    background-color: black;
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajavideos{
+    border: solid white;
+    border-width: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajavideos h2{
+    padding: 0px 50px 0px 50px;
+}
+
+.video1{
+    border: solid white;
+    border-width: 0px 3px;
+    padding: 30px;
+}
+
+.video2{
+    border: solid white;
+    border-width: 0px;
+    padding: 30px;
+}
+
+
+/*CONCIERTOS*/
+
+.cajapadrefechasdeconciertos{
+    background-image: url(../imágenes/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    color: white;
+    background-size: cover;
+}
+
+.cajaconciertos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cajapadrefechasdeconciertos h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    color:black;
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 40px;
+    font-weight: 500;
+}
